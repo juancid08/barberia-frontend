@@ -1,0 +1,153 @@
+/* You can add global styles to this file, and also import other style files */
+/* ─── Google Fonts ─────────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+/* ─── Design Tokens ────────────────────────────────────────────────────────── */
+:root {
+  --color-bg:       #0A0A0A;
+  --color-surface:  #141414;
+  --color-border:   #2A2A2A;
+  --color-text:     #F5F5F5;
+  --color-muted:    #888888;
+  --color-accent:   #C8A96E;
+  --color-white:    #FFFFFF;
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+
+  --size-xs:   0.75rem;
+  --size-sm:   0.875rem;
+  --size-base: 1rem;
+  --size-lg:   1.125rem;
+  --size-xl:   1.5rem;
+  --size-2xl:  2rem;
+  --size-3xl:  3rem;
+  --size-4xl:  4.5rem;
+  --size-5xl:  6rem;
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  --transition: 0.25s ease;
+
+  --navbar-height: 72px;
+}
+
+/* ─── Reset ─────────────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--size-base);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ─── Utility classes ───────────────────────────────────────────────────────── */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.section {
+  padding-block: 6rem;
+}
+
+.label {
+  font-family: var(--font-body);
+  font-size: var(--size-xs);
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  background: transparent;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  font-family: var(--font-body);
+  font-size: var(--size-sm);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: background var(--transition), color var(--transition);
+  border-radius: var(--radius-sm);
+
+  &:hover {
+    background: var(--color-accent);
+    color: var(--color-bg);
+  }
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--size-sm);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: border-color var(--transition), color var(--transition);
+  border-radius: var(--radius-sm);
+
+  &:hover {
+    border-color: var(--color-text);
+  }
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-muted); }
+
+/* ─── Reduced motion ────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

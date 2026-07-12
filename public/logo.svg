@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&amp;display=swap');
+      .hg { font-family: 'Cormorant Garamond', Georgia, serif; }
+    </style>
+  </defs>
+
+  <!-- Fondo -->
+  <circle cx="100" cy="100" r="98" fill="#0A0A0A" stroke="#C8A96E" stroke-width="1"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#2A2A2A" stroke-width="0.5"/>
+  <circle cx="100" cy="100" r="83" fill="none" stroke="#2A2A2A" stroke-width="0.4" stroke-dasharray="3 6"/>
+
+  <!-- H.G. -->
+  <text x="100" y="96" text-anchor="middle"
+    class="hg" fill="#C8A96E"
+    font-size="54" font-weight="300" font-style="italic" letter-spacing="-1">H.G.</text>
+
+  <!-- Línea divisora -->
+  <line x1="28" y1="108" x2="172" y2="108" stroke="#C8A96E" stroke-width="0.6" opacity="0.6"/>
+
+  <!-- Punta de navaja -->
+  <polygon points="160,102 172,108 160,114" fill="#C8A96E" opacity="0.9"/>
+
+  <!-- BARBER -->
+  <text x="100" y="136" text-anchor="middle"
+    class="hg" fill="#F5F5F5"
+    font-size="22" font-weight="300" letter-spacing="5">BARBER</text>
+
+  <!-- Puntos decorativos -->
+  <circle cx="46" cy="100" r="1.5" fill="#C8A96E" opacity="0.5"/>
+  <circle cx="154" cy="100" r="1.5" fill="#C8A96E" opacity="0.5"/>
+</svg>
