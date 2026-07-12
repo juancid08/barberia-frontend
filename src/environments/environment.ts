@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:5001/api',
+  apiUrl: 'https://barber-backend-7q9a.onrender.com/api'',
 };
